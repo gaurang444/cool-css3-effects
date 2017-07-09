@@ -1,0 +1,35 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("http://www.lapusku.bl.ee/blackcode/images/css3.jpg");
+	background-size: cover;
+
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 800px;
+	height: 400px;
+
+}
+img{
+	width: 500px;
+	height: 300px;
+}
+.box{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.imgafter{
+	width: 0;
+	transition: 5s;
+	overflow: hidden;
+	border-right: 10px solid red;
+}
+.container:hover .imgafter{
+	width: 62%;
+}
