@@ -1,0 +1,16 @@
+.fade {
+    opacity: 0.5;
+    width: 400px;
+    height: 200px;
+    background: red;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fade:hover{
+    opacity:1;
+}
+
