@@ -1,0 +1,61 @@
+@-webkit-keyframes breathing {
+    0% {
+        -moz-box-shadow: 0px 1px -1px #F00;
+        -webkit-box-shadow: 0px 1px -1px #F00;
+        box-shadow: 0px 1px -1px #F00;
+    }
+    50% {
+        -moz-box-shadow: 0px 1px 25px #F00;
+        -webkit-box-shadow: 0px 1px 25px #F00;
+        box-shadow: 0px 1px 25px #F00;
+    }
+}
+@-moz-keyframes breathing {
+    0% {
+        -moz-box-shadow: 0px 1px 1px #F00;
+        -webkit-box-shadow: 0px 1px 1px #F00;
+        box-shadow: 0px 1px 1px #F00;
+    }
+    50% {
+        -moz-box-shadow: 0px 1px 25px #F00;
+        -webkit-box-shadow: 0px 1px 25px #F00;
+        box-shadow: 0px 1px 25px #F00;
+    }
+}
+@keyframes breathing {
+    0% {
+        -moz-box-shadow: 0px 1px 1px #F00;
+        -webkit-box-shadow: 0px 1px 1px #F00;
+        box-shadow: 0px 1px 1px #F00;
+    }
+    50% {
+        -moz-box-shadow: 0px 1px 25px #F00;
+        -webkit-box-shadow: 0px 1px 25px #F00;
+        box-shadow: 0px 1px 25px #F00;
+    }
+}
+
+.item {
+    width: 180px;
+    height: 180px;
+    background: #FFF;
+    float: left;
+    margin-left: 20px;
+    -moz-border-radius: 3px / 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px / 3px;
+    -moz-box-shadow: 0px 1px 1px #F00;
+    -webkit-box-shadow: 0px 1px 1px #F00;
+    box-shadow: 0px 1px 1px #F00;
+    animation: breathing 3s linear infinite;
+    -ms-animation: breathing 3s linear infinite;
+    -webkit-animation: breathing 3s linear infinite;
+    -moz-animation: breathing 3s linear infinite;
+    -o-animation: breathing 3s linear infinite;
+}
+.item h1 {
+    color: #666;
+    font-weight: 500;
+    padding-top: 45%;
+    text-align: center;
+}
