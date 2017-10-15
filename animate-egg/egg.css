@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes eyes {
+  0% {
+    transform: scale(1) translate(0,0);
+    transition: transform 1s ease;
+  }
+  50% {
+     transform: rotateX(20deg) translate(2px,2px);
+  }
+  100% {
+    transform: scale(1) translate(0,0);
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translate(0px,0);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: translate(5px,-5px);
+    transition: transform 1s ease;
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes deadbone {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 5000px;
+  }
+}
+
+#eye1, #eye2 {
+  animation: eyes 3s linear infinite;
+}
+
+#line {
+  animation: line 3s linear infinite;
+}
+
+@keyframes bacon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 5000px;
+  }
+}
+
+.bg {
+  background-image: url('bacon.svg');
+  background-size: 120px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  animation: bacon 40s linear infinite;
+  background-color: antiquewhite;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
