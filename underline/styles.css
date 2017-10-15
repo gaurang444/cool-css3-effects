@@ -1,0 +1,70 @@
+/*  Left to Right */
+
+.underline-lr {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.underline-lr:after {
+  background-color: #000;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.5s ease all;
+}
+
+.underline-lr:hover:after {
+  width: 100%;
+}
+
+/* Right to Left */
+
+.underline-rl {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.underline-rl:after {
+  background-color: #000;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.5s ease all;
+}
+
+.underline-rl:hover:after {
+  width: 100%;
+}
+
+/* Middle Out */
+
+.underline-middle {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.underline-middle:after {
+  background-color: #000;
+  content: '';
+  display: block;
+  top: 100%;
+  margin: auto;
+  height: 2px;
+  width: 0;
+  transition: 0.5s ease all;
+}
+
+.underline-middle:hover:after {
+  width: 100%;
+}
