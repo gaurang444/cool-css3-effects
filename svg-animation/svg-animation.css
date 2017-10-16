@@ -10,10 +10,10 @@ path {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-name: mozillaLogo;
+  animation-name: svgAnimation;
 
 }
-@keyframes mozillaLogo {
+@keyframes svgAnimation {
 
   to {
       stroke-width:15px;
