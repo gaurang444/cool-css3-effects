@@ -1,23 +1,17 @@
-body{
-	margin:0;
-	padding:0;
-	background: #1c5746;
+.imagezoom {
+	overflow: hidden;
+	width: 300px;
 }
-.container{
-	position: absolute;
-	width:300px;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	height: 300px;
-	overflow:hidden;
-}
-.container img{
-	width:100%;
-	transform:.5s all ease-in-out;
 
+.imagezoom img {
+	max-width: 100%;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
-.container:hover img{
-	transform:scale(1.5);
 
+.imagezoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
