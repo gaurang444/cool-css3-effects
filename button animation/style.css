@@ -1,0 +1,27 @@
+.btn
+{
+    width: 10%;
+    margin: 50px 20px;
+    font-weight: bold;
+    position:absolute;
+    background: #57B846;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: animated_div 5s 1;
+}
+
+
+@keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;background: coral;}
+50% {transform: rotate(0deg);left:1360px;background: crimson;}
+55% {transform: rotate(0deg);left:1360px;background: lightcoral;}
+70% {transform: rotate(0deg);left:1360px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
